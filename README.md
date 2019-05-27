@@ -1,4 +1,5 @@
-# non
+# non อัพเดตแล้ว
+
 NON BOT LINE
 
 
@@ -74,6 +75,9 @@ pip3 install pytz
 
 pip3 install wikipedia
 
+cd non
+
+python3 mmx.py
 
 Bot flex by. non bot line
 
