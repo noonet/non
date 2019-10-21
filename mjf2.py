@@ -28,7 +28,7 @@ _session = requests.session()
 botStart = time.time()
 #======================================================================================
 print ("\n\nคุณชายเจคนหล่อ\n❴✯ʟɪᴋᴇ•ʙʏ⁂❴ᴿˢᐪ❵⍣ᴊᴇsᴇʀ⓶✯❵")
-maxgie = LINE("")
+maxgie = LINE('')
 maxgie.log("Auth Token : " + str(maxgie.authToken))
 maxgie.log("Timeline Token : " + str(maxgie.tl.channelAccessToken))
 
@@ -218,9 +218,9 @@ with open("Max2.json", "r", encoding="utf_8_sig") as f:
     itu = json.loads(f.read())
     itu.update(wait)
     wait = itu
-Notify = "ucf71b8c1b067423f8ebefbfe6ae0ccc3"
-maxgie.findAndAddContactsByMid(Notify)
-maxgie.sendMessage(Notify,"เข้าสู่ระบบสำเร็จ")
+#Notify = "ucf71b8c1b067423f8ebefbfe6ae0ccc3"
+#maxgie.findAndAddContactsByMid(Notify)
+#maxgie.sendMessage(Notify,"เข้าสู่ระบบสำเร็จ")
 lgncall = ""
 keyword = {}
 try:
@@ -4770,7 +4770,7 @@ async def maxgieBot(op):
                         else:
                             group.preventedJoinByTicket = False
                             maxgie.updateGroup(group)
-                            maxgie.sendMessage(to, "เปิดลิ้งเรียบร้อย")
+                            duc1(to, "เปิดลิ้งเรียบร้อย")
                 elif text.lower() == 'ปิดลิ้ง':
                     if msg.toType == 2:
                         group = maxgie.getGroup(to)
@@ -4780,7 +4780,7 @@ async def maxgieBot(op):
                         else:
                             group.preventedJoinByTicket = True
                             maxgie.updateGroup(group)
-                            maxgie.sendMessage(to, "ปิดลิ้งเรียบร้อย")
+                            duc1(to, "ปิดลิ้งเรียบร้อย")
                 elif text.lower() == 'ข้อมูลกลุ่ม':
                     group = maxgie.getGroup(to)
                     try:
